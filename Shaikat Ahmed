@@ -1,0 +1,16 @@
+def main():
+    temperatureprogram()
+
+def temperatureprogram():
+    x="cookies"
+    a=True
+    while(a==True):
+        Fartemperature = int(input("What is the current temperature in Fartemperature?"))
+        Celtemperature = ((Fartemperature - 32) * (5/9))
+        print("The temperature is",Fartemperature, "In Fartemperature and ", Celtemperature,"in Celtemperature")
+        answer = input("Would you like to convert another temperature?")
+        if answer == 'yes':
+            a=True
+        else:
+            a=False
+main()
