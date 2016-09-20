@@ -1,0 +1,79 @@
+Quadratic
+
+'''
+Assignment 3: Quadratic
+'''
+
+print ("Welcome to the Program. Please enter the value of A, B, C, and X at the corresponding prompts.")
+a = int(input("What is the value of A? "))
+b = int(input("What is the value of B? "))
+c = int(input("What is the value of C? "))
+x = int(input("What is the value of X? "))
+
+quadratic="The following quadratic was entered: " + str(a) + "X^2"
+if ( b >= 0):
+    quadratic += ("+" + str(b) + "X")
+else:
+    quadratic +=  (str(b) + "X")
+if (c >= 0):
+    quadratic +=  ("+" + str(c))
+else:
+    quadratic +=  (str(c))
+print (quadratic + "\nThe value of the quadratic is: " + str((a*(x*x)) + (b*x) + c))
+
+
+
+Temperature
+
+'''
+Assignment 1: Temperature
+'''
+
+again = True
+while again:
+    temperature = int(input("Enter temperature in fahrenheit: "))
+    celsius = (temperature - 32) * (5/9)
+    print(str(temperature) + " fahrenheit = " + str(celsius) + " celsius")
+    repeat = input("Do you want to convert another temperature? [y/n]: ")
+    if (repeat != "Y" and repeat != "y"):
+        again = False
+
+
+Temp Chart
+'''
+Assignment 2: Temperature Chart
+'''
+
+def toFahrenheit (celsius):
+    return celsius * 1.8 + 32
+
+for a in range (0, 101, 5):
+    print (str(a) + " celsius = " + str(toFahrenheit(a)) + " fahrenheit") 
+
+
+
+Prime 
+'''
+Prime numbers from 1-100
+'''
+
+def isPrime(number):
+	for x in range(2,101):
+		if not number % x and x != number:
+			return False
+	return True
+
+for a in range (2,101):
+	if isPrime(a):
+		print(a, "is a prime number")
+
+
+
+
+
+
+
+
+
+
+
